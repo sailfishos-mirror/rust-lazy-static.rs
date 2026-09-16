@@ -1,6 +1,11 @@
 lazy-static.rs
 ==============
 
+> [!WARNING]
+> This crate has been replaced by the [`LazyLock`] type, which is stable since Rust 1.80.0 with a slightly different syntax. Barring breakages and security fixes, this crate will no longer be updated.
+
+[`LazyLock`]: https://doc.rust-lang.org/std/sync/struct.LazyLock.html
+
 A macro for declaring lazily evaluated statics in Rust.
 
 Using this macro, it is possible to have `static`s that require code to be
@@ -31,7 +36,7 @@ Add the following dependency to your Cargo manifest...
 
 ```toml
 [dependencies]
-lazy_static = "1.5.0"
+lazy_static = "1.5.1"
 ```
 
 ...and see the [docs](https://docs.rs/lazy_static) for how to use it.
